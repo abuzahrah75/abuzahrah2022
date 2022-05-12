@@ -5,7 +5,7 @@ from .todo import todos
 
 
 def index(request):
-    return render(request, 'core/index.html')
+    return render(request, 'core/index2.html')
 
 
 @require_http_methods(['POST'])
