@@ -1,5 +1,11 @@
-{% extends "core/_base2.html" %} {% block content %}
-<div class="w-small w-2/3 mx-auto py-10 text-gray-600">
+{% extends "core/_base2.html" %} 
+
+{% block tajuk %} abuzahrah2022: INDEX TEST {% endblock tajuk %}
+{% block extrahead %} {% endblock extrahead %}
+{% block extrascript %} {% endblock extrascript %}
+
+{% block content %}
+<div class="w-small w-2/3 mx-auto py-7 text-gray-600">
   <input
     hx-headers='{"X-CSRFToken": "{{ csrf_token }}"}'
     type="text"
@@ -17,25 +23,21 @@
 <table class="border-collapse w-small w-2/3 mx-auto">
   <thead>
     <tr>
-      <th
-        class="p-3 font-bold uppercase bg-gray-200 text-gray-600 border border-gray-300 hidden lg:table-cell"
-      >
+      <th class="p-1 font-bold uppercase bg-gray-200 text-gray-600 border border-gray-300 hidden lg:table-cell">
         #
       </th>
-      <th
-        class="p-3 font-bold uppercase bg-gray-200 text-gray-600 border border-gray-300 hidden lg:table-cell"
-      >
+      <th class="p-1 font-bold uppercase bg-gray-200 text-gray-600 border border-gray-300 hidden lg:table-cell">
         Title
       </th>
-      <th
-        class="p-3 font-bold uppercase bg-gray-200 text-gray-600 border border-gray-300 hidden lg:table-cell"
-      >
+      <th class="p-1 font-bold uppercase bg-gray-200 text-gray-600 border border-gray-300 hidden lg:table-cell">
         Completed
       </th>
     </tr>
   </thead>
   <tbody id="todo-results">
-    {% include "todo.html" %}
+    {% include "core/todo.html" %}
   </tbody>
 </table>
+
+{% comment %} {% include "core/tailexample.html" %} {% endcomment %}
 {% endblock content %}
