@@ -43,6 +43,10 @@ INSTALLED_APPS = [
     'django_browser_reload',
 
     'core',
+    'tugasan',
+    'kumpulan',
+    'pengguna',
+    'dokumen',
 
 
 ]
