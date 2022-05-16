@@ -1,3 +1,9 @@
 from django.contrib import admin
 
-# Register your models here.
+from .models import *
+
+admin.site.register(Kumpulan)
+admin.site.register(Jenis)
+admin.site.register(Kategori)
+admin.site.register(Tags)
+
