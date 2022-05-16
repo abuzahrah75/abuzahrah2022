@@ -1,7 +1,8 @@
 from django.urls import path
-from . import views
+from .views import *
 
 urlpatterns = [
-    path('', views.index, name="tugasan-index"),
+    path('', index, name="tugasan-index"),
+    path('add_tugas/', add_tugas, name="tugasan-add"),
 
 ]
