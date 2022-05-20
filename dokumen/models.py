@@ -1,3 +1,11 @@
 from django.db import models
 
-# Create your models here.
+
+class Docs_template(models.Model):
+    pass
+
+
+class Category(models.Model):
+    pass
+
+
