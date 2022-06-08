@@ -39,14 +39,14 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'tailwind',
-    'theme',
+    # 'theme',
     'django_browser_reload',
 
     'core',
     'tugasan',
     'kumpulan',
     'pengguna',
-    'dokumen',
+    # 'dokumen',
 
 
 ]
