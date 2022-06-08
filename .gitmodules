@@ -1,3 +1,9 @@
 [submodule "tugasan"]
 	path = tugasan
 	url = https://github.com/abuzahrah75/tugasan.git
+[submodule "dokumen"]
+	path = dokumen
+	url = https://github.com/abuzahrah75/dokumen.git
+[submodule "theme"]
+	path = theme
+	url = https://github.com/abuzahrah75/theme.git
