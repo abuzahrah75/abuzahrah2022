@@ -16,6 +16,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 # from core import views
+
+# change some setting in admin site
+admin.site.site_header="AbuZahrah.com"
+admin.site.site_title="Abu Zahrah 2022"
+admin.site.index_title = "ADMIN SECTION "
+
 urlpatterns = [
     path('', include("core.urls")),
     path('__reload__', include('django_browser_reload.urls')),
