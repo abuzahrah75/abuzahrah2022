@@ -23,7 +23,7 @@ admin.site.site_title="Abu Zahrah 2022"
 admin.site.index_title = "ADMIN SECTION "
 
 urlpatterns = [
-    path('', include("core.urls")),
+    path('', include("tugasan.urls")),
     path('__reload__', include('django_browser_reload.urls')),
     path('admin/', admin.site.urls),
     path('tugasan/', include('tugasan.urls')),
